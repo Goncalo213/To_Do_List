@@ -1,0 +1,100 @@
+/* font importing */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* reseting css rules */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    /* Colors */
+    --maincolor: #2b2a2a;
+    --elements: #191818;
+    --letter: #fff;
+    --hover: #1f1e1e;
+    --icons: #3c3a3a;
+}
+
+body{
+    background: #000;
+    color: #FFF;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.conteudo{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: var(--maincolor);
+    padding: 55px;
+    border-radius: 12px;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.topo input{
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--elements);
+    outline: none;
+    font-size: 1.2rem;
+    background: var(--elements);
+    color: var(--letter);
+} 
+
+.topo button{
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid var(--elements);
+    background: var(--elements);
+    color: var(--letter);
+    outline: none;
+}
+
+.topo button:hover{
+    background: var(--hover);
+    cursor: pointer;
+}
+
+#listaTarefas{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTarefas li{
+    padding: 20px;
+    background: var(--elements);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnAcao{
+    border-radius: 20px;
+    border: 1px solid var(--elements);
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: var(--maincolor);
+    color: var(--letter);
+}
+
+.btnAcao:hover{
+    background: var(--icons);
+}
